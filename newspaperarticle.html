@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Articles Layout</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .newspaper-container {
+            display: flex;
+            flex-direction: column;
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .article {
+            margin-bottom: 40px;
+        }
+        .article-header {
+            text-align: center;
+        }
+        .article-header h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .article-header p {
+            font-style: italic;
+            color: #555;
+        }
+        .article-content {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+            text-align: justify;
+        }
+        .article-content img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+        .columns {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        @media (min-width: 768px) {
+            .columns {
+                flex-direction: row;
+            }
+            .column {
+                flex: 1;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper-container">
+        <div class="article">
+            <div class="article-header">
+                <h1>The Future of Technology</h1>
+                <p>By John Doe | February 11, 2025</p>
+            </div>
+            <div class="article-content">
+                <img src="https://via.placeholder.com/800x400" alt="Technology Image">
+                <div class="columns">
+                    <div class="column">
+                        <p>Technology is evolving at an unprecedented rate. The integration of artificial intelligence, automation, and quantum computing is revolutionizing industries worldwide.</p>
+                    </div>
+                    <div class="column">
+                        <p>From self-driving cars to smart homes, the future looks promising. The impact of these advancements on society will shape the way we live, work, and communicate in the coming decades.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <div class="article-header">
+                <h1>Climate Change and Its Impact</h1>
+                <p>By Jane Smith | February 12, 2025</p>
+            </div>
+            <div class="article-content">
+                <img src="https://via.placeholder.com/800x400" alt="Climate Change Image">
+                <div class="columns">
+                    <div class="column">
+                        <p>Climate change is a pressing issue that affects the entire planet. Rising global temperatures, melting ice caps, and extreme weather events highlight the urgent need for environmental policies.</p>
+                    </div>
+                    <div class="column">
+                        <p>Governments and individuals alike must take action to reduce carbon footprints, embrace renewable energy, and work towards sustainability for future generations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="article">
+            <div class="article-header">
+                <h1>The Rise of Space Exploration</h1>
+                <p>By Michael Brown | February 13, 2025</p>
+            </div>
+            <div class="article-content">
+                <img src="https://via.placeholder.com/800x400" alt="Space Exploration Image">
+                <div class="columns">
+                    <div class="column">
+                        <p>Space exploration has entered a new era with missions to Mars, commercial space travel, and the establishment of lunar bases. Scientists and engineers continue to push the boundaries of human knowledge.</p>
+                    </div>
+                    <div class="column">
+                        <p>As technology advances, space exploration could unlock resources, discover new planets, and redefine humanity’s place in the universe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
