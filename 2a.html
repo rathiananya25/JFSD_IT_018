@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voting Eligibility Form</title>
+  <link rel="stylesheet" href="2c.css">
+</head>
+<body>
+  <div class="form-container">
+    <h1>Voting Eligibility Form</h1>
+    <form id="votingForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" required>
+
+      <label for="nationality">Nationality:</label>
+      <select id="nationality" name="nationality" required>
+        <option value="">Select Nationality</option>
+        <option value="US">United States</option>
+        <option value="IN">India</option>
+        <option value="UK">United Kingdom</option>
+        <option value="CA">Canada</option>
+        <option value="AU">Australia</option>
+      </select>
+
+      <button type="submit">Check Eligibility</button>
+    </form>
+    <p id="result"></p>
+  </div>
+
+  <script src="2c.js"></script>
+</body>
+</html>
